@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Image Editor Apps</title>
+    
+    
+</head>
+<body>
+
+    <div class="container disable">
+        <h2>Easy Image Editor</h2>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Edit Filter :</label>
+                    <div class="option">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+
+                    </div>
+
+                </div>
+                <div class="rotate">
+                    <label class="title">Rotate & Flip</label>
+                    <div class="option">
+                        
+                        <button id="right"> <i class="fa-solid fa-rotate-right fa-beat"></i> </button>
+                        <button id="horizontal">&#8633;</button>
+                        <button id="vertical">&#8645; </button>
+                        <button id="left"> <i class="fa-solid fa-rotate-left fa-beat"></i> </button>
+                        
+                        
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="img/downloadcover.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="control">
+            <button class="reset-filter">Resent Filter</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choice-img">Choice Image</button>
+                <button class="save-img">download Image</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
